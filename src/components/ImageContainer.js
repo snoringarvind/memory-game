@@ -1,5 +1,4 @@
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import CardList from "./CardList";
 
 const ImageContainer = ({ score, setScore }) => {
@@ -7,7 +6,12 @@ const ImageContainer = ({ score, setScore }) => {
 
   return (
     <div className="ImageContainer">
-      <CardList images={images} score={score} setScore={setScore} />{" "}
+      <CardList
+        images={images}
+        setImages={setImages}
+        score={score}
+        setScore={setScore}
+      />
     </div>
   );
 };
